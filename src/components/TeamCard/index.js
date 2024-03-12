@@ -6,7 +6,7 @@ const TeamCard = props => {
   return (
     <li className="team-card-container">
       <div>
-        <img className="team-logo" src={teamImageUrl} alt={name} />
+        <img className="team-logo1" src={teamImageUrl} alt={name} />
       </div>
       <div className="team-name">
         <p>{name}</p>

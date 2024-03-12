@@ -17,22 +17,25 @@ export default class LatestMatch extends Component {
     } = latestMatchDetails
     return (
       <div className="match-card-container">
-        <div>
-          <p className="competing-team">{competingTeam}</p>
-          <p className="description">{date}</p>
-          <p className="description">{venue}</p>
-          <p className="description">{result}</p>
-          <p className="description">Man Of The Match</p>
-          <p className="description">{manOfTheMatch}</p>
+        <div className="match-card-sub-container">
+          <div>
+            <p className="competing-team">{competingTeam}</p>
+            <p className="description">{date}</p>
+            <p className="description">{venue}</p>
+            <p className="description">{result}</p>
+            <p className="description">Man Of The Match</p>
+            <p className="description">{manOfTheMatch}</p>
+          </div>
+          <div className="team-image-container1">
+            <img
+              className="team-logo"
+              src={competingTeamLogo}
+              alt={`latest match ${competingTeam}`}
+            />
+          </div>
         </div>
-        <div>
-          <img
-            className="team-logo"
-            src={competingTeamLogo}
-            alt={`latest match ${competingTeam}`}
-          />
-        </div>
-        <div>
+
+        <div className="innings-container">
           <p className="description description1">First Innings</p>
           <p className="description description1">{firstInnings}</p>
           <p className="description description1">Second Innings</p>

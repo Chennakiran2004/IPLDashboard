@@ -13,6 +13,15 @@ body {
   justify-content: center;
 }
 
+@media screen and (max-width: 578px) {
+  .bg-container {
+    background-image: url('https://assets.ccbp.in/frontend/react-js/ipl-dashboard-sm-bg.png');
+    height: 100vh;
+    width: 100vw;
+    object-fit: contain;
+  }
+}
+
 .app-container {
   display: flex;
   flex-direction: column;

@@ -17,10 +17,27 @@ body {
   border-radius: 12px;
 }
 
-.team-logo {
+@media screen and (max-width: 578px) {
+  .team-card-container {
+    padding: 20px;
+    width: 218px;
+    height: 116px;
+    margin-right: 32px;
+  }
+}
+
+.team-logo1 {
   height: 150px;
   width: 150px;
   object-fit: contain;
+}
+
+@media screen and (max-width: 578px) {
+  .team-logo1 {
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+  }
 }
 
 .team-name {
@@ -29,4 +46,10 @@ body {
   color: #ffffff;
   font-family: 'Bree Serif';
   padding-right: 12px;
+}
+
+@media screen and (max-width: 578px) {
+  .team-name {
+    font-size: 15px;
+  }
 }

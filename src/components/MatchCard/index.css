@@ -13,11 +13,24 @@
   align-items: baseline;
 }
 
+@media screen and (max-width: 578px) {
+  .card-container {
+    width: 224px;
+  }
+}
+
 .logo {
   height: 150px;
   width: 150px;
   object-fit: contain;
   margin: auto;
+}
+
+@media screen and (max-width: 578px) {
+  .logo {
+    height: 80px;
+    width: 80px;
+  }
 }
 
 .heading {
@@ -27,15 +40,33 @@
   font-weight: bold;
 }
 
+@media screen and (max-width: 578px) {
+  .heading {
+    font-size: 18px;
+  }
+}
+
 .result {
   color: #ffffff;
   font-family: 'Bree Serif';
   font-size: 15px;
 }
 
+@media screen and (max-width: 578px) {
+  .result {
+    font-size: 9px;
+  }
+}
+
 .status {
   font-family: 'Bree Serif';
   font-size: 15px;
+}
+
+@media screen and (max-width: 578px) {
+  .status {
+    font-size: 12px;
+  }
 }
 
 .won {
